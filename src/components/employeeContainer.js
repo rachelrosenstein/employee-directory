@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Container from "./Container";
-import Col from "./Col";
-import Card from "./Card";
+import Container from "./container";
+import Col from "./col";
+import Card from "./card";
 import Wrapper from "./Wrapper";
-import SearchForm from "./SearchForm";
+import SearchForm from "./searchForm";
 
-import API from "../utils/API";
+import API from "/Users/rachel/employee-directory/src/api.js";
 
 class EmployeeContainer extends Component {
     state = {
