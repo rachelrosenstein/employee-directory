@@ -2,7 +2,7 @@ import React from "react";
 
 function Card(props) {
     return (
-        <tr>
+        <tr key={props.key}>
             <th>
                 <img alt={props.firstName} src={props.picture} />
             </th>

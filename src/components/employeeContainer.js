@@ -17,6 +17,7 @@ class EmployeeContainer extends Component {
     componentDidMount() {
         API.getUsers()
             .then((res) => {
+                console.log(res)
                 this.setState({
                     employees: res.data.results.map((e, i) => ({
                         firstName: e.name.first,
@@ -85,7 +86,7 @@ class EmployeeContainer extends Component {
                             <tbody>
                                 {[...this.state.result].map((item) => (
                                     <Card
-                                        picture={item.picture}
+                                        picture={item.picture.thumbnail}
                                         firstName={item.name.first}
                                         lastName={item.name.last}
                                         email={item.email}
